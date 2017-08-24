@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            border: 1px solid red;
+
+        }
+        p{
+            padding-left: 30px;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="box"></div>
+<input type="text" id="text"><input type="button" value="发送" id="btn">
+</body>
+</html>
+<script>
+    var a="社会王:"
+    var oBox=document.getElementById("box");
+    var oText=document.getElementById("text");
+    var oBtn=document.getElementById("btn")
+    oBtn.onclick=function (){
+        oBox.innerHTML=oBox.innerHTML+"<span>"+a+"</span>"+"<p>"+oText.value+"</p>"
+        oText.value="";
+    }
+
+</script>

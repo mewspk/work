@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>改属性</title>
+</head>
+<body>
+<input id="txt" type="text" value="">
+<input id="btn" type="button" value="弹窗">
+</body>
+</html>
+<script>
+    var otxt = document.getElementById("txt");
+
+    var oBtn = document.getElementById("btn");
+    oBtn.onclick = function () {
+;
+        otxt.value = oBtn.value;
+    }
+</script>

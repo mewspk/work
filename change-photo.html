@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input{
+            vertical-align: top;
+        }
+    </style>
+
+</head>
+<body>
+<input type="text" id="text"><input type="button" value="切换" id="btn">
+<img src="image/1.jpg" id="img">
+</body>
+</html>
+<script>
+    var oBtn=document.getElementById("btn");
+    var oText=document.getElementById("text");
+    var oImg=document.getElementById("img");
+    oBtn.onclick=function(){
+        oImg.src=oText.value
+    }
+</script>
