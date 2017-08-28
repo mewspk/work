@@ -16,10 +16,12 @@
 </body>
 </html>
 <script>
+
     var oBtn=document.getElementById("btn");
     var oText=document.getElementById("text");
     var oImg=document.getElementById("img");
+
     oBtn.onclick=function(){
-        oImg.src=oText.value
+        oImg.src="image/"+oText.value+".jpg"
     }
 </script>
