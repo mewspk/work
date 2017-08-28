@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+工资：<input type="text" id="text">
+<br/>
+工龄：<input type="text" id="age">
+<input type="button" id="btn"value="查询">
+<script>
+    var oAge=document.getElementById("age");
+    var oText=document.getElementById("text");
+    var oBtn=document.getElementById("btn");
+    var wages = function (){
+        if(oAge.value>=5){
+            i=oText.value*1.2
+
+        }
+        else if(oAge.value>=2 &&i<=4){
+            i= oText.value*1.15
+        }
+        else{
+            i= oText.value*1.5
+        }
+    alert(i)
+    }
+
+    oBtn.onclick=wages;
+</script>
+</body>
+</html>

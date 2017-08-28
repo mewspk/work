@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,ul,li,div{
+            margin: 0;padding:0;
+        }
+        .b{
+            width: 360px;
+            height: 450px;
+            margin: 300px auto;
+        }
+        li{
+            width: 86px;
+            height: 86px;
+            border: 1px solid #333;
+            float: left;
+            list-style: none;
+            border-right: none;
+            cursor: pointer;
+        }
+        img{
+            width: 86px;
+
+        }
+        #big{
+            width: 360px;
+            height: 360px;
+            background: url(images/01big.jpg) no-repeat;
+        }
+        #img4{
+            border-right:1px solid #333 ;
+        }
+    </style>
+</head>
+<body>
+<div class="b">
+<div id="big"></div>
+<ul>
+    <li id="img1"><img src="images/01.jpg"></li>
+    <li  id="img2"><img src="images/02.jpg"></li>
+    <li  id="img3"><img src="images/03.jpg"></li>
+    <li  id="img4"><img src="images/04.jpg"></li>
+</ul></div>
+</body>
+</html>
+<script src="js/base.js"></script>
+<script>
+    setBg("img1","url(images/01big.jpg)");
+    setBg("img2","url(images/02big.jpg)");
+    setBg("img3","url(images/03big.jpg)");
+    setBg("img4","url(images/04big.jpg)");
+</script>

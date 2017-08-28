@@ -6,10 +6,10 @@
 </head>
 <body>
 <div>
-    <h3>蝶恋花</h3>
-    <input type="button" id="btn" value="16">
-    <input type="button" id="btn1" value="18">
-    <input type="button" id="btn2" value="26">
+    <h2>蝶恋花</h2>
+    <input type="button" id="btn" value="12">
+    <input type="button" id="btn1" value="20">
+    <input type="button" id="btn2" value="24">
     <div id="content">
         <p>泪湿罗衣脂粉满</p>
         <p>四叠阳关，唱到千千遍</p>
@@ -24,12 +24,15 @@
     var oBtn2=document.getElementById("btn2");
     var oContent=document.getElementById("content");
     oBtn.onclick=function () {
-        oContent.style.fontSize="16px";
+        oContent.style.fontSize="12px";
+        oContent.style.color="red";
     }
     oBtn1.onclick=function () {
-        oContent.style.fontSize="18px";
+        oContent.style.fontSize="20px";
+        oContent.style.color="blue";
     }
     oBtn2.onclick=function () {
-        oContent.style.fontSize="26px";
+        oContent.style.fontSize="24px";
+        oContent.style.color="pink";
     }
 </script>

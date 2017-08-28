@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="text"><input type="button" id="btn" value="计算">
+</body>
+</html>
+<script>
+    var oText=document.getElementById("text");
+    var oBtn=document.getElementById("btn");
+    var b=oText.value;
+    oBtn.onclick=function(){
+        for(var i= 1,c=1;i<=b;i++){
+            c=c*i
+        }
+        alert(c)
+    }
+</script>
