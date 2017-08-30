@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        button{
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+<button>排他思想</button><button>排他思想</button><button>排他思想</button><button>排他思想</button>
+<button>排他思想</button><button>排他思想</button>
+</body>
+</html>
+<script>
+    var oBtn=document.getElementsByTagName("button");
+    for(var i=0;i<oBtn.length;i++){
+        oBtn[i].onclick=function(){
+            for (var i=0;i<oBtn.length;i++){
+                oBtn[i].style.background="";
+            }
+            this.style.background="pink";
+        }
+    }
+</script>

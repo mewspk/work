@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ccc;
+            background: yellow;
+            margin: 20px;
+            float:left;
+
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>
+<script>
+   window.onload =function() {
+       var oBox = document.getElementsByTagName("div")
+
+       for (var i = 0; i < oBox.length; i++) {
+           oBox[i].onclick = function () {
+               for (var i = 0; i < oBox.length; i++) {
+                   oBox[i].style.background = "yellow";
+               }
+               this.style.background = "red";
+           }
+       }
+   }
+</script>

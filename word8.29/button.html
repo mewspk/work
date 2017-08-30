@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 210px;
+            height: 200px;
+            border: 1px solid #333;
+            margin:100px auto;
+
+            text-align: center;
+        }
+        div span{
+            margin-bottom:50px ;
+            cursor:pointer;
+        }
+        div #btn1{
+            float: left;
+            width:70px;
+            height: 30px;
+            background: red;
+        }
+        div #btn2{
+            float: left;
+            width:70px;
+            height: 30px;
+            background: blue;
+        }
+        div #btn3{
+            float: left;
+            width:70px;
+            height: 30px;
+            background: pink;
+        }
+        div #btn4{
+            float: left;
+            width:70px;
+            height: 30px;
+            background: red;
+        }
+        div #btn5{
+            float: left;
+            width:70px;
+            height: 30px;
+            background: blue;
+        }
+        div #btn6{
+            float: left;
+            width:70px;
+            height: 30px;
+            background: pink;
+        }
+
+    </style>
+</head>
+<body>
+<div><span id="btn1">按钮1</span><span id="btn2">按钮2</span><span id="btn3">按钮3</span>
+<h1 id="h">哈哈哈</h1></div>
+<div class="box2"><span id="btn4">按钮1</span><span id="btn5">按钮2</span><span id="btn6">按钮3</span>
+    <h1 id="h1">哈哈哈</h1></div>
+</body>
+</html>
+<script>
+    function $(id){
+        return document.getElementById(id)
+    }
+    $("btn1").onclick=function(){
+        $("h").innerHTML="哈哈哈"
+    }
+    $("btn2").onclick=function(){
+        $("h").innerHTML="啦啦啦"
+    }
+    $("btn3").onclick=function(){
+        $("h").innerHTML="嘿嘿嘿"
+    }
+    $("btn4").onmouseover=function(){
+        $("h1").innerHTML="哈哈哈"
+    }
+    $("btn5").onmouseover=function(){
+        $("h1").innerHTML="啦啦啦"
+    }
+    $("btn6").onmouseover=function(){
+        $("h1").innerHTML="嘿嘿嘿"
+    }
+
+</script>

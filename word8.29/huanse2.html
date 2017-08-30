@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div,ul,li,span{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 300px;
+            height: 210px;
+            margin: 100px auto;
+            border: 1px solid #333;
+
+        }
+        li{
+          list-style: none;
+            line-height: 30px;
+            width: 100%;
+        }
+        span{
+            margin: 0 20px;
+        }
+        li.pink{
+            background: pink;
+        }
+        li.yellow{
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+        <li><span>将</span><span>时</span><span>傍</span><span>云</span></li>
+        <li><span>谓</span><span>人</span><span>花</span><span>淡</span></li>
+        <li><span>偷</span><span>不</span><span>随</span><span>风</span></li>
+        <li><span>闲</span><span>识</span><span>柳</span><span>清</span></li>
+        <li><span>学</span><span>余</span><span>过</span><span>近</span></li>
+        <li><span>少</span><span>心</span><span>前</span><span>午</span></li>
+        <li><span>年</span><span>乐</span><span>川</span><span>天</span></li>
+    </ul>
+</div>
+</body>
+</html>
+<script>
+    var aLi=document.getElementsByTagName("li")
+    function bg(){
+        for(var i=0;i<aLi.length;i++){
+            if(i%2==0){
+                aLi[i].className="pink";
+            }else{
+                aLi[i].className="yellow";
+            }
+            aLi[i].onmouseover=function(){
+                this.style.backgroundColor="red";
+            }
+            aLi[i].onmouseout=function(){
+                this.style.backgroundColor="";
+            }
+        }
+    }
+    bg();
+</script>

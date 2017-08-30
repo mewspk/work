@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 225px;
+            height: 300px;
+            border: 1px solid #ccc;
+            margin: 100px  auto;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <button>第一个</button><button>第二个</button><button>第三个</button><button>第四个</button>
+    <span></span>
+</div>
+</body>
+</html>
+<script>
+    var aBtn=document.getElementsByTagName("button");
+    var oBox=document.getElementById("box");
+    for (var i=0;i<aBtn.length;i++){
+        aBtn[i].onclick=function() {
+            for (var i=0;i<aBtn.length;i++){
+            aBtn[i].style.background =""
+                }
+            oBox.;
+            this.style.background="red"
+
+        }
+
+    }
+</script>
