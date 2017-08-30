@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button  id="selet">全选</button></button><button id="cancel">取消</button
+><button id="contrary">反选</button>
+<ul>
+    <li>电视<input type="checkbox"></li>
+    <li>音乐<input type="checkbox"></li>
+    <li>电影<input type="checkbox"></li>
+    <li>游戏<input type="checkbox"></li>
+    <li>运动<input type="checkbox"></li>
+    <li>美食<input type="checkbox"></li>
+    <li>阅读<input type="checkbox"></li>
+    <li>睡觉<input type="checkbox"></li>
+    </ul>
+</body>
+</html>
+<script>
+    var aInput=document.getElementsByTagName("input");
+   function $(id){
+       return document.getElementById(id)
+   }
+
+    $("selet").onclick=function(){
+        for(var i=0;i<aInput.length;i++){
+            aInput[i].checked=true;
+        }
+    }
+    $("cancel").onclick=function(){
+        for(var i=0;i<aInput.length;i++){
+            aInput[i].checked=false;
+        }
+    }
+    $("contrary").onclick=function(){
+        for(var i=0;i<aInput.length;i++){
+            if(aInput[i].checked==true){
+                aInput[i].checked=false;
+            }else {
+                aInput[i].checked=true;
+            }
+        }
+    }
+
+
+
+</script>

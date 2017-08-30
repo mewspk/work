@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,div,ul,li{
+            margin: 0;padding: 0;
+        }
+        body{
+            background: url(1.jpg) no-repeat;
+        }
+        .pr{
+            position: relative;
+        }
+        ul{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        li{
+            list-style: none;
+            width: 300px;
+            height: 138px;
+            background: purple;
+            opacity:0.8;
+            filter:alpha(opacity=30);
+            line-height: 140px;
+            text-align: center;
+            position: relative;
+        }
+        p{
+            position: absolute;
+            top:30px;
+            left: -40px;
+            width: 0px;
+            border: 20px solid;
+            border-color: rgba(225,225,225,0) red rgba(225,225,225,0) rgba(225,225,225,0);
+            display: none;
+        }
+    </style>
+</head>
+<body id="box">
+<div class="pr">
+    <ul>
+        <li>第一章<p></p></li>
+        <li>第二章<p></p></li>
+        <li>第三章<p></p></li>
+        <li>第四章<p></p></li>
+        <li>第四章<p></p></li>
+    </ul>
+</div>
+</body>
+</html>
+<script>
+    var ali=document.getElementsByTagName("li");
+    var oBox=document.getElementById("box");
+    var ap=document.getElementsByTagName("p");
+    ali[0].style.background="red";
+    ap[0].style.display="block";
+    for(var i=0;i<ali.length;i++){
+        ali[i].index=i;
+        ali[i].onclick=function (){
+            for(var i=0;i<ali.length;i++) {
+                ali[i].style.background = "";
+                ap[i].style.display="none";
+            }
+            this.style.background="red";
+            ap[this.index].style.display="block";
+        oBox.style.background = "url(" + (this.index+1)+ ".jpg)"}
+    }
+
+</script>
